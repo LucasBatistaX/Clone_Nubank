@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:nubank/utils/appColors.dart';
+import 'package:nubank/utils/app_colors.dart';
+import 'package:nubank/utils/app_text_style.dart';
 
 class Header extends StatefulWidget {
-  const Header({
-    super.key,
-  });
+  const Header({super.key});
 
   @override
   State<Header> createState() => _HeaderState();
@@ -49,18 +48,11 @@ class _HeaderState extends State<Header> {
               ),
             ],
           ),
-          SizedBox(height: 32),
-          Padding(
-            padding: const EdgeInsets.only(left: 24),
-            child: Text(
-              "Olá, Lucas",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
+          // SizedBox(height: 32),
+          // Padding(
+          //   padding: const EdgeInsets.only(left: 24),
+          //   child: Text("Olá, Lucas", style: AppTextStyle.title),
+          // ),
         ],
       ),
     );

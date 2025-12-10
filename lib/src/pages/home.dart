@@ -15,10 +15,15 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           Header(),
+          SizedBox(width: 10),
+          Column(
+            children: [
+              Text("Conta"),
+              Text("R\$ 33.798,97"),
+            ],
+          ),
         ],
       ),
     );
   }
 }
-
-
