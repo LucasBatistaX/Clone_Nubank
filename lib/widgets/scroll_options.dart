@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nubank/utils/app_colors.dart';
 import 'package:nubank/utils/app_sizes.dart';
-import 'package:nubank/utils/app_text_style.dart';
 
 class ScrollOptions extends StatelessWidget {
   const ScrollOptions({super.key, required this.image, required this.title});
