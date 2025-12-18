@@ -1,58 +1,74 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:nubank/utils/app_colors.dart';
+import 'package:nubank/utils/app_sizes.dart';
 import 'package:nubank/utils/app_text_style.dart';
 
-class Header extends StatefulWidget {
-  const Header({super.key});
+class Header extends StatelessWidget {
+  const Header({
+    super.key,
+  });
 
-  @override
-  State<Header> createState() => _HeaderState();
-}
-
-class _HeaderState extends State<Header> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: AppSizes.h188,
       color: AppColors.primary,
-      height: 178,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 24),
-                    child: CircleAvatar(
-                      radius: 24,
-                      backgroundColor: AppColors.backgroundAvatar,
-                      child: Image.asset("assets/avatar.png", height: 20),
-                    ),
+          Padding(
+            padding: const EdgeInsets.only(top: AppSizes.p53),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: AppSizes.s24),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: AppSizes.s24,
+                        backgroundColor: AppColors.backgroundAvatarPerson,
+                        child: SvgPicture.asset(
+                          "assets/person.svg",
+                          height: AppSizes.s24,
+                        ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              Padding(
-                padding: const EdgeInsets.only(right: 24),
-                child: Row(
-                  children: [
-                    Image.asset("assets/eye.png", height: 24),
-                    SizedBox(width: 24),
-                    Image.asset("assets/ajuda.png", height: 24),
-                    SizedBox(width: 24),
-                    Image.asset("assets/message.png", height: 24),
-                  ],
                 ),
-              ),
-            ],
+                Padding(
+                  padding: const EdgeInsets.only(right: AppSizes.s24),
+                  child: Row(
+                    children: [
+                      SvgPicture.asset(
+                        "assets/eye.svg",
+                        height: AppSizes.s24,
+                      ),
+                      SizedBox(width: AppSizes.s24),
+                      SvgPicture.asset(
+                        "assets/help.svg",
+                        height: AppSizes.s24,
+                      ),
+                      SizedBox(width: AppSizes.s24),
+                      SvgPicture.asset(
+                        "assets/message.svg",
+                        height: AppSizes.s24,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-          // SizedBox(height: 32),
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 24),
-          //   child: Text("Olá, Lucas", style: AppTextStyle.title),
-          // ),
+          SizedBox(height: AppSizes.s28),
+          Padding(
+            padding: const EdgeInsets.only(left: AppSizes.s24),
+            child: Text(
+              "Olá, Lucas Batista",
+              style: AppTextStyle.userName,
+            ),
+          ),
         ],
       ),
     );
