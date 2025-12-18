@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nubank/utils/app_colors.dart';
 import 'package:nubank/utils/app_sizes.dart';
 import 'package:nubank/utils/app_text_style.dart';
 import 'package:nubank/widgets/Header.dart';
 import 'package:nubank/widgets/balance_account.dart';
 import 'package:nubank/widgets/full_scroll_view_options.dart';
+import 'package:nubank/widgets/info_card.dart';
 import 'package:nubank/widgets/my_cards.dart';
 
 class HomePage extends StatefulWidget {
@@ -30,6 +30,32 @@ class _HomePageState extends State<HomePage> {
           SizedBox(height: AppSizes.s28),
           MyCards(),
           SizedBox(height: AppSizes.s24),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                SizedBox(width: AppSizes.s24),
+                InfoCard(
+                  firstText: "Seu",
+                  purpleText: "informes de rendimentos",
+                  lastText: "2025 já está disponivel",
+                ),
+                SizedBox(width: AppSizes.s12),
+                InfoCard(
+                  firstText: "Seu",
+                  purpleText: "informes de rendimentos",
+                  lastText: "2025 já está disponivel",
+                ),
+                SizedBox(width: AppSizes.s12),
+                InfoCard(
+                  firstText: "Seu",
+                  purpleText: "informes de rendimentos",
+                  lastText: "2025 já está disponivel",
+                ),
+                SizedBox(width: AppSizes.s24),
+              ],
+            ),
+          ),
         ],
       ),
     );

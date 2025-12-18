@@ -28,4 +28,10 @@ class AppTextStyle {
     fontSize: 14,
     fontWeight: FontWeight.w500,
   );
+  //Purple text
+  static const purpleText = TextStyle(
+    color: AppColors.backgroundAvatarPerson,
+    fontSize: 14,
+    //fontWeight: FontWeight.w500,
+  );
 }

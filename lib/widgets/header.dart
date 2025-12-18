@@ -5,14 +5,12 @@ import 'package:nubank/utils/app_sizes.dart';
 import 'package:nubank/utils/app_text_style.dart';
 
 class Header extends StatelessWidget {
-  const Header({
-    super.key,
-  });
+  const Header({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSizes.h188,
+      height: AppSizes.h178,
       color: AppColors.primary,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,15 +39,9 @@ class Header extends StatelessWidget {
                   padding: const EdgeInsets.only(right: AppSizes.s24),
                   child: Row(
                     children: [
-                      SvgPicture.asset(
-                        "assets/eye.svg",
-                        height: AppSizes.s24,
-                      ),
+                      SvgPicture.asset("assets/eye.svg", height: AppSizes.s24),
                       SizedBox(width: AppSizes.s24),
-                      SvgPicture.asset(
-                        "assets/help.svg",
-                        height: AppSizes.s24,
-                      ),
+                      SvgPicture.asset("assets/help.svg", height: AppSizes.s24),
                       SizedBox(width: AppSizes.s24),
                       SvgPicture.asset(
                         "assets/message.svg",
@@ -64,10 +56,7 @@ class Header extends StatelessWidget {
           SizedBox(height: AppSizes.s28),
           Padding(
             padding: const EdgeInsets.only(left: AppSizes.s24),
-            child: Text(
-              "Olá, Lucas Batista",
-              style: AppTextStyle.userName,
-            ),
+            child: Text("Olá, Lucas Batista", style: AppTextStyle.userName),
           ),
         ],
       ),

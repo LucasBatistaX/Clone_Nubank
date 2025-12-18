@@ -15,5 +15,7 @@ class AppSizes {
 
   //specific padding
   static const double p53 = 53.00; //Padding top of the header.
-  static const double h188 = 188.00; //Height of the header container.
+  static const double h178 = 178.00; //Height of the header container.
+  static const double h80 = 80.00; //Height of the header container.
+  static const double w270 = 270.00; //width info card container.
 }
