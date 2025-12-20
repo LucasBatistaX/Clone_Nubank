@@ -25,13 +25,25 @@ class AppTextStyle {
   //Title Options
   static const titleOptions = TextStyle(
     color: AppColors.secundary,
-    fontSize: 14,
+    fontSize: AppSizes.s14,
     fontWeight: FontWeight.w500,
   );
   //Purple text
   static const purpleText = TextStyle(
     color: AppColors.backgroundAvatarPerson,
-    fontSize: 14,
-    //fontWeight: FontWeight.w500,
+    fontSize: AppSizes.s14,
+    fontWeight: FontWeight.w500,
+  );
+  //title Credit Card
+  static const titleCreditCard = TextStyle(
+    color: AppColors.secundary,
+    fontSize: AppSizes.s24,
+    fontWeight: FontWeight.w500,
+  );
+  //button Card
+  static const TextStyle buttonCard = TextStyle(
+    color: Colors.white,
+    fontSize: AppSizes.s16,
+    fontWeight: FontWeight.bold,
   );
 }
