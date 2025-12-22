@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nubank/utils/app_paths.dart';
 import 'package:nubank/utils/app_sizes.dart';
 import 'package:nubank/widgets/Scroll_options.dart';
 
@@ -14,26 +15,26 @@ class FullScrollViewOptions extends StatelessWidget {
       child: Row(
         children: [
           SizedBox(width: AppSizes.s24),
-          ScrollOptions(image: "assets/pix.svg", title: "Área Pix"),
+          ScrollOptions(image: AppPaths.pix, title: "Área Pix"),
           SizedBox(width: AppSizes.s12),
-          ScrollOptions(image: "assets/pagar.svg", title: "Pagar"),
+          ScrollOptions(image: AppPaths.pagar, title: "Pagar"),
           SizedBox(width: AppSizes.s12),
           ScrollOptions(
-            image: "assets/transferir.svg",
+            image: AppPaths.transferir,
             title: "Transferir",
           ),
           SizedBox(width: AppSizes.s12),
           ScrollOptions(
-            image: "assets/depositar.svg",
+            image: AppPaths.depositar,
             title: "Depositar",
           ),
           SizedBox(width: AppSizes.s12),
-          ScrollOptions(image: "assets/recarga.svg", title: "Recarga"),
+          ScrollOptions(image: AppPaths.recarga, title: "Recarga"),
           SizedBox(width: AppSizes.s12),
-          ScrollOptions(image: "assets/cobrar.svg", title: "Cobrar"),
+          ScrollOptions(image: AppPaths.cobrar, title: "Cobrar"),
           SizedBox(width: AppSizes.s12),
           ScrollOptions(
-            image: "assets/transferir_internacional.svg",
+            image: AppPaths.transferirIntern,
             title: "Transferir \n Internac.",
           ),
           SizedBox(width: AppSizes.s24),
@@ -41,4 +42,7 @@ class FullScrollViewOptions extends StatelessWidget {
       ),
     );
   }
+}
+
+class AppPath {
 }
