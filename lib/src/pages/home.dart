@@ -15,6 +15,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Column(
         children: [
           Container(
@@ -74,6 +75,22 @@ class _HomePageState extends State<HomePage> {
                     "Olá, Lucas Batista",
                     style: AppTextStyle.userName,
                   ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: AppSizes.s32),
+          Padding(
+            padding: const EdgeInsets.only(left: AppSizes.s24),
+            child: Column(
+              children: [
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text("Conta", style: AppTextStyle.account),
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text("R\$ 9.654,63", style: AppTextStyle.value),
                 ),
               ],
             ),
