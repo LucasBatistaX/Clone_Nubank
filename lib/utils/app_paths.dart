@@ -13,4 +13,5 @@ class AppPaths {
   static const String recarga = "assets/recarga.svg";
   static const String transferirIntern = "assets/transferir_internacional.svg";
   static const String transferir = "assets/transferir.svg";
+  static const String publi = "assets/publi.png";
 }

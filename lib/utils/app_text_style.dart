@@ -17,25 +17,25 @@ class AppTextStyle {
     fontWeight: FontWeight.bold,
   );
   //Value Account
-  static const value = TextStyle(
+  static const TextStyle value = TextStyle(
     color: AppColors.secundary,
     fontSize: AppSizes.s20,
     fontWeight: FontWeight.bold,
   );
   //Title Options
-  static const titleOptions = TextStyle(
+  static const TextStyle titleOptions = TextStyle(
     color: AppColors.secundary,
     fontSize: AppSizes.s14,
     fontWeight: FontWeight.w500,
   );
   //Purple text
-  static const purpleText = TextStyle(
+  static const TextStyle purpleText = TextStyle(
     color: AppColors.backgroundAvatarPerson,
     fontSize: AppSizes.s14,
     fontWeight: FontWeight.w500,
   );
   //title Credit Card
-  static const titleCreditCard = TextStyle(
+  static const TextStyle titleCreditCard = TextStyle(
     color: AppColors.secundary,
     fontSize: AppSizes.s24,
     fontWeight: FontWeight.w500,
@@ -45,5 +45,17 @@ class AppTextStyle {
     color: Colors.white,
     fontSize: AppSizes.s16,
     fontWeight: FontWeight.bold,
+  );
+  // publi title
+  static const TextStyle publiTitle = TextStyle(
+    color: AppColors.secundary,
+    fontSize: AppSizes.s16,
+    fontWeight: FontWeight.w600,
+  );
+  //text grey of publi
+  static const TextStyle textGrey = TextStyle(
+    color: AppColors.greyText,
+    fontSize: AppSizes.s14,
+    fontWeight: FontWeight.w400,
   );
 }

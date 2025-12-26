@@ -3,9 +3,7 @@ import 'package:nubank/utils/app_sizes.dart';
 import 'package:nubank/utils/app_text_style.dart';
 
 class BalanceAccount extends StatelessWidget {
-  const BalanceAccount({
-    super.key,
-  });
+  const BalanceAccount({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +17,7 @@ class BalanceAccount extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.centerLeft,
-            child: Text("R\$ 9.654,63", style: AppTextStyle.value),
+            child: Text("R\$ 19.654,63", style: AppTextStyle.value),
           ),
         ],
       ),
