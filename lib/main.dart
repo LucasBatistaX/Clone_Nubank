@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:nubank/providers/obscure_eye.dart';
 import 'package:nubank/src/pages/Home.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( 
+    ChangeNotifierProvider(
+      create: (_) => ObscureEye(),
+    child: MyApp())
+  );
 }
 
 class MyApp extends StatelessWidget {

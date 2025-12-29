@@ -1,19 +1,14 @@
 import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:nubank/utils/app_colors.dart';
-import 'package:nubank/utils/app_paths.dart';
 import 'package:nubank/utils/app_sizes.dart';
-import 'package:nubank/utils/app_text_style.dart';
 import 'package:nubank/widgets/Header.dart';
 import 'package:nubank/widgets/balance_account.dart';
 import 'package:nubank/widgets/full_scroll_view_options.dart';
-import 'package:nubank/widgets/info_card.dart';
 import 'package:nubank/widgets/my_cards.dart';
-import 'package:nubank/widgets/nu_button.dart';
+import 'package:nubank/widgets/publi_section.dart';
 import 'package:nubank/widgets/request_your_card.dart';
 import 'package:nubank/widgets/scroll_card_session.dart';
-import 'package:nubank/widgets/single_publi_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -55,29 +50,7 @@ class _HomePageState extends State<HomePage> {
                 color: AppColors.backgroundAvatarScroll,
               ),
               SizedBox(height: AppSizes.s32),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: AppSizes.s24),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Descubra mais", style: AppTextStyle.account),
-                    SizedBox(height: AppSizes.s24),
-                    SingleChildScrollView(
-                      clipBehavior: Clip.none,
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: [
-                          SinglePubliCard(),
-                          SizedBox(width: AppSizes.s16),
-                          SinglePubliCard(),
-                          SizedBox(width: AppSizes.s16),
-                          SinglePubliCard(),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              PubliSection(),
               SizedBox(height: AppSizes.s38),
             ],
           ),
