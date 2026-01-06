@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:nubank/utils/app_colors.dart';
+import 'package:nubank/utils/app_paths.dart';
 import 'package:nubank/utils/app_sizes.dart';
 import 'package:nubank/utils/app_text_style.dart';
 
@@ -21,7 +22,7 @@ class MyCards extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: AppSizes.s16),
           child: Row(
             children: [
-              SvgPicture.asset("assets/cartao.svg"),
+              SvgPicture.asset(AppPaths.cartao),
               SizedBox(width: AppSizes.s16),
               Text("Meus Cartões", style: AppTextStyle.titleOptions),
             ],

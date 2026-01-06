@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:nubank/utils/app_colors.dart';
+import 'package:nubank/utils/app_paths.dart';
 import 'package:nubank/utils/app_sizes.dart';
 import 'package:nubank/utils/app_text_style.dart';
 
@@ -28,7 +29,7 @@ class Header extends StatelessWidget {
                         radius: AppSizes.s24,
                         backgroundColor: AppColors.backgroundAvatarPerson,
                         child: SvgPicture.asset(
-                          "assets/person.svg",
+                          AppPaths.person,
                           height: AppSizes.s24,
                         ),
                       ),
@@ -39,14 +40,11 @@ class Header extends StatelessWidget {
                   padding: const EdgeInsets.only(right: AppSizes.s24),
                   child: Row(
                     children: [
-                      SvgPicture.asset("assets/eye.svg", height: AppSizes.s24),
+                      SvgPicture.asset(AppPaths.eye, height: AppSizes.s24),
                       SizedBox(width: AppSizes.s24),
-                      SvgPicture.asset("assets/help.svg", height: AppSizes.s24),
+                      SvgPicture.asset(AppPaths.help, height: AppSizes.s24),
                       SizedBox(width: AppSizes.s24),
-                      SvgPicture.asset(
-                        "assets/message.svg",
-                        height: AppSizes.s24,
-                      ),
+                      SvgPicture.asset(AppPaths.message, height: AppSizes.s24),
                     ],
                   ),
                 ),
