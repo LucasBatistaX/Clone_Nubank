@@ -9,4 +9,6 @@ class AppColors {
   static const Color backgroundAvatarPerson = Color.fromARGB(255, 155, 75, 216);
   static const Color backgroundAvatarScroll = Color.fromARGB(255, 41, 40, 40);
   static const Color backgroundPubliScroll = Colors.white10;
+  static const Color backgroundApp = Colors.black;
+
 }

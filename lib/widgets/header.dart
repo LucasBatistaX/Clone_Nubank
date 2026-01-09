@@ -20,7 +20,7 @@ class _HeaderState extends State<Header> {
     final eye = context.watch<ObscureEye>();
 
     return Container(
-      height: AppSizes.h178,
+      height: AppSizes.h188,
       color: AppColors.primary,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

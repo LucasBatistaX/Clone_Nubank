@@ -1,5 +1,5 @@
-import 'package:colorful_safe_area/colorful_safe_area.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:nubank/utils/app_colors.dart';
 import 'package:nubank/utils/app_sizes.dart';
 import 'package:nubank/widgets/Header.dart';
@@ -20,10 +20,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return ColorfulSafeArea(
-      topColor: AppColors.primary,
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle(
+        statusBarColor: AppColors.primary,
+        statusBarIconBrightness: Brightness.light,
+      ),
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.backgroundApp,
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
