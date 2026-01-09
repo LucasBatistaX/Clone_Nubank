@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:nubank/utils/app_colors.dart';
 import 'package:nubank/utils/app_paths.dart';
 import 'package:nubank/utils/app_sizes.dart';
 import 'package:nubank/utils/app_text_style.dart';
