@@ -17,28 +17,26 @@ class _BalanceAccountState extends State<BalanceAccount> {
 
   @override
   Widget build(BuildContext context) {
-    //final obscureSaldo = context.watch<ObscureEye>();
-
     return Padding(
       padding: const EdgeInsets.only(left: AppSizes.s24),
-      child: Column(
-        children: [
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text("Saldo em conta", style: AppTextStyle.account),
-          ),
-          SizedBox(height: 4),
-          Consumer<ObscureEye>(
-            builder: (context, obscureSaldo, child) {
-              return Align(
-                alignment: Alignment.centerLeft,
-                child: obscureSaldo.isVisible
+      child: SizedBox(
+        height: AppSizes.h60,
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Saldo em conta", style: AppTextStyle.account),
+            SizedBox(height: 4),
+            Consumer<ObscureEye>(
+              builder: (context, obscureSaldo, child) {
+                return obscureSaldo.isVisible
                     ? Text("R\$ $saldo", style: AppTextStyle.value)
-                    : HiddenText(),
-              );
-            },
-          ),
-        ],
+                    : HiddenText();
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
