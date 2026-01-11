@@ -33,7 +33,6 @@ dependencies:
   provider: ^6.1.5
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.2.3
-  colorful_safe_area: ^1.0.0
   flutter_native_splash: ^2.4.7
   flutter_launcher_icons: ^0.14.4
 
